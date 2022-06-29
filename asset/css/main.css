@@ -1,0 +1,166 @@
+.sc-visual{overflow: hidden;}
+.sc-visual .img-box{
+    position: relative;
+    
+}
+.sc-visual img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    transform: scale(1.5);
+    transition:all 0.5s 0,3s;
+}
+.sc-visual .swiper-slide-active.img{
+    transform: scale(1);
+}
+/* .sc-visual .img-box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    opacity: 0.25;
+    z-index: 9;
+} */
+
+.sc-visual .txt-box{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 3em;
+    z-index: 9999;
+    color: #fff;
+}
+.sc-visual .txt-title{
+    font-size: 10vw;
+    line-height: 1em;
+}
+.sc-visual .txt-info{
+    font-size: 1.8em;
+}
+.sc-visual .swiper-slide:hover .txt-info{
+    text-decoration: underline;
+}
+.sc-visual .scroll-down{
+    position: absolute;
+    pointer-events: none;
+    font-size: 1em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    bottom: 25px;
+    letter-spacing: 0.2em;
+}
+
+
+/*///////////// featured */
+.featured .inner{
+    overflow: hidden;
+}
+.sc-title{
+    font-size: 2em;
+    margin-top: 100px;
+}
+.featured .swiper-slide .img-box{
+    overflow: hidden;
+}
+.featured .mid-slide{
+    position: relative;
+}
+/* .featured .swiper-wrapper{
+    position: relative;
+} */
+.featured .swiper-slide:hover img{
+    transform: scale(1.1);
+}
+.featured img{
+    transition: all 2s;
+}
+.featured .img-box{
+    position: relative;
+}
+.featured .txt-box{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    text-align: center;
+}
+
+.txt-subtitle{
+    font-size: 4em;
+    line-height: 1em;
+}
+.txt-title{font-size: 12em;}
+.txt-madeby{
+    font-size: 2.2em;
+    line-height: 1em;
+    margin-top: 25px;
+}
+.featured .btn-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 36px;
+    height: 52px;
+    box-sizing: border-box;
+
+    background: #fff;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+.featured .btn-nav.prev{
+    left: -16px;
+}
+.featured .btn-nav.next{
+    right: -16px;
+}
+.featured .swiper-button-disabled.btn-nav{
+    display: none;
+}
+
+
+/* //////////recom-artist-area */
+.recom-artist-area{
+    margin-top: 100px;
+    position: relative;
+}
+/* .recom-artist-area .artist-box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../imges/contents/biglarge_Tiger_Gaulino_469c752944.jpg) no-repeat;
+    background-size: 100%;
+} */
+
+.recom-artist-area .txt-box{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1em;
+    z-index: 9999;
+    color: #fff;
+}
+.recom-artist-area .txt-subtitle{
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+.recom-artist-area .txt-title{font-size: 12vw;}
+.recom-artist-area .txt-madeby{
+    font-size: 2.2em;
+    margin-top: 15px;
+}

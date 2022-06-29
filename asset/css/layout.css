@@ -1,0 +1,64 @@
+@import url(./font.css);
+@import url(./reset.css);
+@import url(./common.css);
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150px;
+    padding: 15px 30px;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.header .inner{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+
+    width: calc(100% - (30px*2));
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.header .logo-area{
+    display: block;
+    width: 100%;
+}
+.header svg{
+    width: 207px;
+    fill: #fff;
+}
+
+.header .gnb-area{
+    margin-left: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    
+    color: #fff;
+}
+.header .menu-list{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    right: auto;
+}
+.header .util-area .link-menu{
+    display: inline-block;
+}
+.header .util-area .link-menu:first-child{
+    margin-right: 50px;
+}
+.header .util-area .link-menu:last-child{
+    padding: 5px 10px;
+    border: solid 1.5px #fff;
+    text-decoration: none;
+    /* transition: 0.5s; */
+}
+.header .util-area .link-menu:last-child:hover{
+    background-color: white;
+    color: #1f1f1f;
+}

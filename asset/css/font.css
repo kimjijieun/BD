@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'akzidenz';
+    src: url(../font/다운로드.woff);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'akzidenz';
+    src: url(../font/berthold-akzidenz-grotesk-be-regular-webfont.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'akzidenz';
+    src: url(../font/akzidgrostdlig-webfont.woff2);
+    font-weight: 500;
+}

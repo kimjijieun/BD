@@ -1,0 +1,35 @@
+body{
+    font-family: 'akzidenz',sans-serif;
+    font-weight: 400;
+    color: #1f1f1f;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.inner{
+    /* width: 1440px; */
+    max-width: 1306px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.blind{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+img{width: 100%;}
+.img-box{position: relative;}
+.img-box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1f1f1f;
+    opacity: 0.25;
+    z-index: 9;
+}
