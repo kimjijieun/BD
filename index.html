@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="./asset/css/main.css">
 </head>
 <body>
+    <div class="pop-up">
+        <em class="pop-title">Cookie policy</em>
+        <p class="pop-info">This website uses cookies to ensure you get the best experience. Read more about our <span><a href="">cookie policy.</a></span></p>
+        <button class="button">Accept</button>
+        <!-- <div class="button"><a href="">Accept</a></div> -->
+    </div>
+
+
     <header class="header">
         <div class="inner">
             <h1 class="logo">
@@ -52,7 +60,18 @@
                 </ul>
 
                 <div class="util-area">
-                    <a href="" class="link-menu">search</a>
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                            <div class="link-wrap">
+                                <div class="search-list">
+                                    <label for="search" class="link-search">search</label>
+                                    <input type="text" name="" id="search" class="search-bar"placeholder="type here...">
+                                </div>
+                                
+                            </div>
+                        </fieldset>
+                    </form>
                     <a href="" class="link-menu">menu</a>
                 </div>
             </nav>
@@ -97,7 +116,7 @@
 
         </section>
 
-        <section class="featured">
+        <section class="sc-featured">
             <div class="inner">
                 <h2 class="sc-title">featured</h2>
 
@@ -153,7 +172,8 @@
 
         <div class="recom-artist-area">
             <a href="" class="artist-box">
-                <div class="img-box"><img src="./asset/imges/contents/biglarge_Tiger_Gaulino_469c752944.jpg" alt=""></div>
+                <!-- <div class="img-box"><img src="./asset/imges/contents/biglarge_Tiger_Gaulino_469c752944.jpg" alt=""></div> -->
+                <div class="img-box"><div class="bg-img"></div></div>
                 <div class="txt-box">
                     <strong class="txt-subtitle">art editions</strong>
                     <h3 class="txt-title">tiger art gaulino</h3>
@@ -168,7 +188,7 @@
                 <h2 class="sc-title">meet the authors</h2>
 
                 <div class="end-slide">
-                    <ul class="swipper-wrapper">
+                    <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
@@ -176,30 +196,40 @@
                                 </div>
                                 <span class="name">jaime hayon</span>
                             </a>
+                        </li>
+                        <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/imges/contents/face2.jpg" alt="">
                                 </div>
                                 <span class="name">ettore sottsass</span>
                             </a>
+                        </li>
+                        <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/imges/contents/face3.jpg" alt="">
                                 </div>
                                 <span class="name">alfredo häberli</span>
                             </a>
+                        </li>
+                        <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/imges/contents/face4.jpg" alt="">
                                 </div>
                                 <span class="name">salvador dalí</span>
                             </a>
+                        </li>
+                        <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/imges/contents/face5.jpg" alt="">
                                 </div>
                                 <span class="name">oscar tusquets</span>
                             </a>
+                        </li>
+                        <li class="swiper-slide">
                             <a href="">
                                 <div class="img-box">
                                     <img src="./asset/imges/contents/face6.jpg" alt="">
@@ -207,16 +237,17 @@
                                 <span class="name">antoni gaudí</span>
                             </a>
                         </li>
+                        
                     </ul>
-                    <a href="" class="btn-nav prev"><span class="blind">이전</span></a>
-                    <a href="" class="btn-nav next"><span class="blind">다음</span></a>
+                    <a href="" class="swiper-button-prev btn-nav prev2"><span class="blind">이전</span></a>
+                    <a href="" class="swiper-button-next btn-nav next2"><span class="blind">다음</span></a>
                 </div>
             </section>
 
             <section class="sc-contract">
                 <h2 class="sc-title">contract division</h2>
 
-                <a href="">
+                <a href="" class="contract-box">
                     <div class="img-box"><img src="./asset/imges/contents/contract.jpg" alt=""></div>
                     <div class="txt-box">
                         <strong class="txt-subtitle">cricket ground</strong>
@@ -236,7 +267,41 @@
             <section class="sc-news">
                 <h2 class="sc-title">news</h2>
 
-                <ul class="new-list">
+                <div class="new-slide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="">
+                                <div class="img-box"><img src="./asset/imges/contents/new1.jpg" alt=""></div>
+                                <div class="txt-box">
+                                    <strong class="txt-subtitle">Bronze Delta ADI Award for Table B Desk</strong>
+                                    <span class="new-day">awards — 27 Jun, 22</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <div class="img-box"><img src="./asset/imges/contents/new2.jpg" alt=""></div>
+                                <div class="txt-box">
+                                    <strong class="txt-subtitle">BD winner of the ADI FAD Career Award</strong>
+                                    <span class="new-day">awards — 16 Jun, 22</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <div class="img-box"><img src="./asset/imges/contents/new3.jpg" alt=""></div>
+                                <div class="txt-box">
+                                    <strong class="txt-subtitle">50 years of BD Barcelona Design</strong>
+                                    <span class="new-day">06 May, 22</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="link-more"><a href="">all news</a></li>
+                    </ul>
+                    <a href="" class="swiper-button-prev btn-nav prev3"><span class="blind">이전</span></a>
+                    <a href="" class="swiper-button-next btn-nav next3"><span class="blind">다음</span></a>
+                </div>
+                <!-- <ul class="new-list new-slide">
                     <li class="new-item">
                         <a href="">
                             <div class="img-box"><img src="./asset/imges/contents/new1.jpg" alt=""></div>
@@ -265,7 +330,7 @@
                         </a>
                     </li>
                     <li class="link-more"><a href="">all news</a></li>
-                </ul>
+                </ul> -->
             </section>
 
             <div class="support-area">
@@ -276,29 +341,40 @@
     </main>
 
     <footer class="footer">
-        <div class="inner">
-            <div class="contact-area">
+        <div class="contact-area">
+            <div class="inner">
                 <a href="">contact</a>
                 <a href="">subscribe to the newsletter</a>
             </div>
+        </div>
 
-            <div class="sns-area">
+        <div class="sns-area">
+            <div class="inner">
                 <div class="sns-wrap">
-                    <a href="" class="link-insta"></a>
-                    <a href="" class="link-facebook"></a>
-                    <a href="" class="link-twitter"></a>
-                    <a href="" class="link-pinterest"></a>
-                    <a href="" class="link-linkedin"></a>
-                    <a href="" class="link-vimeo"></a>
+                    <a href="" class="link-icon link-insta"></a>
+                    <a href="" class="link-icon link-facebook"></a>
+                    <a href="" class="link-icon link-twitter"></a>
+                    <a href="" class="link-icon link-pinterest"></a>
+                    <a href="" class="link-icon link-linkedin"></a>
+                    <a href="" class="link-icon link-vimeo"></a>
                 </div>
                 
-                <ul>
-                    <li><a href="">legal note</a></li>
-                    <li><a href="">privacy policy</a></li>
-                    <li><a href="">cookises</a></li>
-                    <li><a href=""><span class="blind">design by</span></a></li>
+                <ul class="note-list">
+                    <li class="note-item"><a href="">legal note</a></li>
+                    <li class="note-item"><a href="">privacy policy</a></li>
+                    <li class="note-item"><a href="">cookises</a></li>
+                    <li class="note-item">
+                        <span class="blind">design by</span>
+                        <svg version="1.1" id="svgLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 345 212.3" enable-background="new 0 0 345 212.3" xml:space="preserve">
+                            <path d="M339.1,142.2h-62L253,4.4c-0.3-2.4-2.1-4.4-5.3-4.4H243c-2.7,0-4.1,1.2-5,2.9l-64.9,139.2
+                              c-0.3,0-0.3,0-0.9,0L107.3,2.9c-0.9-1.8-2.7-2.9-5-2.9h-4.7c-3.2,0-5,2.1-5.3,4.4L67.9,142.2h-62c-3.3,0-5.9,2.7-5.9,5.9v20.3
+                              c0,3.3,2.7,5.9,5.9,5.9h56.3l-5,28.3c-0.6,4.1,1.8,6.8,5.6,6.8h26.5c2.7,0,5-2.4,5.3-4.4l4.7-30.6h49.8l15.7,34.7
+                              c0.9,1.8,2.4,3.2,5,3.2h5.3c2.7,0,4.4-1.5,5-3.2l15.5-34.7h49.7l4.8,30.6c0.6,2.1,2.9,4.4,5.6,4.4h26.8c3.8,0,6.2-2.7,5.3-6.8
+                              l-5-28.3h56.3c3.3,0,5.9-2.7,5.9-5.9v-20.3C345,144.9,342.4,142.2,339.1,142.2z M104.2,142.2l7.5-49c0.3,0,0.9,0,0.9,0l22.1,49
+                              H104.2z M209.9,142.2l21.8-49c0,0,0.6,0,0.9,0l7.6,49H209.9z"></path>
+                          </svg>
+                    </li>
                 </ul>
-
                 <span>2021 © BD Barcelona Design</span>
             </div>
         </div>

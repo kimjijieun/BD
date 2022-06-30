@@ -10,6 +10,7 @@ body{
     max-width: 1306px;
     margin: 0 auto;
     padding: 0 30px;
+    overflow: hidden;
 }
 .blind{
     width: 1px;
@@ -32,4 +33,26 @@ img{width: 100%;}
     background-color: #1f1f1f;
     opacity: 0.25;
     z-index: 9;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    /* *1024을 기준으로 화면을 보고 잡아야함 */ 
+		/*  -> 이것보다 더 줄어들었을때의 과정을 봐야하기때문에*/ 
+ 
+}
+
+@media screen and (max-width: 1023px) {
+    /* *768을보고 잡아야함 */
+    .inner{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* *320을 보고 잡아야함 */
+    .inner{
+        padding: 0 10px;
+    }
 }
