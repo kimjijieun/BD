@@ -1,16 +1,23 @@
+:root{
+    --font-en1:"hatton",serif;
+    --font-en2:'Montserrat', sans-serif;
+    --color-green:#81d8d0;
+}
+
 body{
-    font-family: 'akzidenz',sans-serif;
-    font-weight: 400;
+    /* hatton */
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     color: #1f1f1f;
     font-size: 1em;
     line-height: 1.4;
+
 }
 .inner{
     /* width: 1440px; */
     max-width: 1306px;
     margin: 0 auto;
     padding: 0 30px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .blind{
     width: 1px;
