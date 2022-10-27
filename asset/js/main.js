@@ -27,9 +27,9 @@ $(function(){
             val=''
         }
 
-        // =>
         $(this).data('name')?val=$(this).data('name'):val='';
-
+        //줄여쓰기 =>$('.cursor').html(`<span>${val}</span>`);
+        
         // if ($(this).parents('.sc-featured').length) {
         //     // $('.cursor').text('featured');
         //     $('.cursor').html('<span>featured</span>');
@@ -49,16 +49,16 @@ $(function(){
     })
 
     gsap.to('.recom-artist-area .img-box',{
-        // y:-180
+        // y:-180 픽셀
         scrollTrigger:{
-            trigger:".recom-artist-area", //기준태그 recom-artist-area의 시작과 끝
-            start:"top 80%", //(트리거기준, 윈도우) 둘이 만나야 실행
-            end: "bottom top", //(트리거기준, 윈도우) 둘이 만나야 실행
+            trigger:".recom-artist-area", //총구,기준태그 recom-artist-area의 시작과 끝
+            start:"top 80%", //(트리거기준, 윈도우기준) 둘이 만나야 실행
+            end: "bottom top", //(트리거기준, 윈도우기준) 둘이 만나야 실행
             markers:true, //좌표표시
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
-        yPercent:-10
+        yPercent:-10 //퍼센테이지
     })
 
 
@@ -125,7 +125,7 @@ $(function(){
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
-        xPercent:-100
+        xPercent:-100 //움직이는 애가 -100프로까지 가라
       })
 
 
@@ -150,24 +150,25 @@ $(function(){
     //헤더 슬라이드시 사라졌다가 나타나기
     $(window).scroll(function(){
         curr = $(this).scrollTop();
-        scvisual = $('.sc-visual').outerHeight();
-        if (curr > scvisual) {
+        visualHeight = $('.sc-visual').outerHeight();
+        // scvisual = $('.sc-visual').outerHeight();
+        if (curr > visualHeight) {
             $('.header').addClass('active');
         } else {
             $('.header').removeClass('active');
         }
-        
-
     });
-    
+
+
 
     $(window).trigger('scroll');
 
 
-    $('.link-search').click(function(){
-        $('.link-search').addClass('active')
+    $('.header .util-area .link-wrap').click(function(e){
+        e.preventDefault();
+        $('.link-wrap').addClass('open')
     })
-    $('.link-search').click(function(){
-        $('.link-search').removeClass('active')
-    })
+    // $('.header .util-area .link-wrap').click(function(){
+    //     $('.link-wrap').removeClass('open')
+    // })
 });

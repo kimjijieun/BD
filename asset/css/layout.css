@@ -2,7 +2,7 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-.pop-up{
+/* .pop-up{
     width: 282px;
     height: 236px;
     box-sizing: border-box;
@@ -35,7 +35,7 @@
 .pop-up .button:hover{
     color: #fff;
     background-color: #1f1f1f;
-}
+} */
 
 
 
@@ -61,12 +61,9 @@
     color: #1f1f1f;
     background-color: white;
     border-bottom: 1px solid black;
-    z-index: 9999;
+    z-index: 99;
 }
-.header.active.white{
-    background-color: white;
-    border-bottom: 1px solid black;
-}
+
 .header.active svg{
     display: inline-block;
     width: 200px;
@@ -94,7 +91,7 @@
 .header .logo{}
 .header .logo .link-logo{
     display: block;
-    width: 150px;
+    width: 250px;
     height: 30px;
     background: url(../imges/logo/logo.png) no-repeat 0/100%;
 }
@@ -128,30 +125,53 @@
 .header .util-area .link-search{
     margin-right: 50px;
 }
-.header .search-list{
+/* .header .search-list{
     position: relative;
+} */
+.header .util-area .link-wrap{
+    position: relative;
+    /* overflow: hidden; */
 }
 
 .header .util-area .search-bar{
     border: none;
     padding: 5px;
     border-bottom: 2px solid #fff;
-    transition: all 0.6s;
+    /* transition: all 0.6s; */
+    transition: 0.6s cubic-bezier(0.46, 0.01, 0, 0.99);
     opacity: 0;
     font-size: 1em;
-    color: rgb(255, 255, 255, 0.5);
+    color: #fff;
     background-color: transparent;
     position: absolute;
     right: 50px;
+    /* width: 173px; */
+    width: 0;
+
+    visibility: hidden;
+    /* transform: translateX(100%); */
+}
+.header .util-area .search-bar::placeholder{
+    color:  rgb(255, 255, 255, 0.5);
+}
+
+/* 자바 */
+.header .util-area .link-wrap.open .link-search{
+    opacity: 0;
+}
+.header .util-area .link-wrap.open .search-bar{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
     width: 173px;
 }
-/* 자바 */
-.header .link-search.active{
+/* .header .link-search.open .search-bar{
+    transform: translateX(180px);
     opacity: 1;
 }
-.header .link-search.active .link-search{
+.header .link-search.open{
     display: none;
-}
+} */
 
 .header .util-area .btn-nenu:last-child{
     padding: 5px 10px;
@@ -316,6 +336,9 @@ body::-webkit-scrollbar-track {
         font-size: 1.5em;
     }
 }
+
+
+
 
 .cursor{
     position: fixed;

@@ -59,3 +59,20 @@ a{
 img{
     vertical-align: top;
 }
+input {
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+input:focus {
+    outline: none;
+}
+fieldset {
+    margin: 0;
+}
+button {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

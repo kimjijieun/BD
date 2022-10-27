@@ -1,3 +1,5 @@
+.container{overflow: hidden;}
+
 .sc-visual{overflow: hidden;}
 .sc-visual .img-box{
     position: relative;
@@ -37,6 +39,13 @@
     z-index: 9999;
     color: #fff;    
 }
+.sc-visual .txt-title{
+    font-size: 6vw;
+    line-height: 1.5em; 
+    font-family: var(--font-en1);
+    overflow: hidden;
+    display: block;
+}
 .sc-visual .txt-box b{
     display: inline-block;
     transform: translateY(110%);
@@ -45,45 +54,36 @@
 .sc-visual .swiper-slide-active .txt-box b{
     transform: translateY(0%);
 }
-.sc-visual .txt-title{
-    font-size: 6vw;
-    line-height: 1.5em;
-    font-family: var(--font-en1);
-    overflow: hidden;
-    display: block;
-
-
-}
 .sc-visual .txt-info{
     font-size: 1.8em;
     display: block;
-
-
 }
 .sc-visual .swiper-slide:hover .txt-info{
     text-decoration: underline;
 }
 .sc-visual .scroll-down{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* pointer-events: none; */
     font-size: 1em;
-    color: #fff;
-    text-align: center;
     padding: 10px;
     cursor: pointer;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     z-index: 10;
     bottom: 25px;
     letter-spacing: 0.2em;
+    font-family: var(--font-en2);
 }
 
 
 /*///////////// featured */
-.sc-featured .inner{
-    /* overflow: hidden; */
-}
 .sc-featured{
     overflow: hidden;
+}
+.sc-featured .inner{
+    /* overflow: hidden; */
 }
 .sc-title{
     font-size: 2em;
@@ -94,13 +94,13 @@
     position: relative;
 }
 
-
-.sc-featured img{transition: transform 0.5s;}
-.sc-featured .img-box{
-    position: relative;
-    transition: transform 0.5s;
+.sc-featured .img-box{position: relative;
+    transition: transform .5s;
     overflow: hidden;
 }
+.sc-featured img{ transition: transform .5s;}
+
+
 .sc-featured .txt-box{
     position: absolute;
     color: #fff;
@@ -193,7 +193,7 @@
     line-height: 1em;
 }
 .recom-artist-area .txt-title{
-    font-size: 7vw;
+    font-size: 8vw;
     line-height: 1em;
 }
 .recom-artist-area .txt-madeby{
