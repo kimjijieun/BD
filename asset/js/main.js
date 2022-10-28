@@ -166,8 +166,11 @@ $(function(){
 
     $('.header .util-area .link-wrap').click(function(e){
         e.preventDefault();
-        $('.link-wrap').addClass('open')
+        $('.link-wrap').addClass('open');
     })
+    $('header').click(function(e){
+        if( !$('.header .util-area .link-wrap').has(e.target).length ) $('.header .util-area .link-wrap').removeClass('open');
+    });
     // $('.header .util-area .link-wrap').click(function(){
     //     $('.link-wrap').removeClass('open')
     // })

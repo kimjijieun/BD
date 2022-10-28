@@ -2,8 +2,14 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
 @font-face {
     font-family: 'hatton';
     src: url(../font/hatton-semibold-webfont.woff2);
     font-weight: 400;
+}
+
+@font-face{
+    font-family: 'akzid';
+    src: url(../font/akzidgrostdlig-webfont.woff2);
 }

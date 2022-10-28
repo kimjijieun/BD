@@ -1,12 +1,12 @@
 :root{
-    --font-en1:'hatton','Pretendard', -apple-system, 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    --font-en2:'Montserrat','Pretendard', -apple-system, 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    --font-en1:'hatton','Pretendard', '-apple-system', 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    --font-en2:'Montserrat','Pretendard', '-apple-system', 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     --color-green:#81d8d0;
 }
 
 body{
     /* hatton */
-    font-family: 'Pretendard', -apple-system, 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-family: 'Pretendard', '-apple-system', 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     color: #1f1f1f;
     font-size: 1em;
     line-height: 1.4;
@@ -43,23 +43,3 @@ img{width: 100%;}
 }
 
 
-
-@media screen and (max-width: 1200px) {
-    /* *1024을 기준으로 화면을 보고 잡아야함 */ 
-		/*  -> 이것보다 더 줄어들었을때의 과정을 봐야하기때문에*/ 
- 
-}
-
-@media screen and (max-width: 1023px) {
-    /* *768을보고 잡아야함 */
-    .inner{
-        padding: 0 20px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    /* *320을 보고 잡아야함 */
-    .inner{
-        padding: 0 10px;
-    }
-}

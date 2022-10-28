@@ -398,8 +398,7 @@
  
 }
 
-@media screen and (max-width: 1023px) {
-    /* *768을보고 잡아야함 */ 
+/* @media screen and (max-width: 1023px) {
     .sc-featured img{
         width: 728px;
         height: 728px;
@@ -462,7 +461,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    /* *320을 보고 잡아야함 */
     
     .header .inner{
         width: calc(100% - (10px*2));
@@ -479,4 +477,4 @@
         color: #fff;
         background: none;
     }
-}
+} */

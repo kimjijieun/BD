@@ -53,7 +53,8 @@
     background-color: transparent;
     box-sizing: border-box;
     z-index: 99;
-    font-family: var(--font-en2);
+    /* font-family: var(--font-en2); */
+    font-family: 'akzid';
 }
 /* 자바 */
 .header.active{
@@ -283,8 +284,7 @@ body::-webkit-scrollbar-track {
 
 
 /* 반응형 */
-@media screen and (max-width: 1200px) {
-    /* *1024을 기준으로 화면을 보고 잡아야함 */ 
+/* @media screen and (max-width: 1200px) {
 
     .header.active svg{
         width: 185px;
@@ -310,7 +310,6 @@ body::-webkit-scrollbar-track {
 }
 
 @media screen and (max-width: 1023px) {
-    /* *768을보고 잡아야함 */
     .header .inner{
         justify-content: space-between;
     }
@@ -327,7 +326,6 @@ body::-webkit-scrollbar-track {
 }
 
 @media screen and (max-width: 767px) {
-    /* *320을 보고 잡아야함 */
     
     .sc-visual .txt-title{
         font-size: 18vw;
@@ -335,7 +333,7 @@ body::-webkit-scrollbar-track {
     .sc-visual .txt-info{
         font-size: 1.5em;
     }
-}
+} */
 
 
 
