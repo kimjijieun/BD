@@ -112,12 +112,13 @@
     align-items: center;
     gap: 50px;
     right: auto;
+    flex-wrap: wrap;
 }
 .header .util-area{
     display: flex;
     align-items: center;
 }
-.header .util-area .btn-nenu{
+.header .util-area .btn-menu{
     display: inline-block;
 }
 .header .util-area .link-search{
@@ -174,16 +175,108 @@
     display: none;
 } */
 
-.header .util-area .btn-nenu:last-child{
+.header .util-area .btn-menu:last-child{
     padding: 5px 10px;
     border: solid 1.5px #fff;
     text-decoration: none;
     transition: 0.5s;
 }
-.header .util-area .btn-nenu:last-child:hover{
+.header .util-area .btn-menu:last-child:hover{
     background-color: white;
     color: #1f1f1f;
 }
+
+
+.header .menu-area{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: center;
+    transition: 0.9s cubic-bezier(0.86, 0.01, 0.1, 1);
+
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+
+    font-family: 'akzid';
+    overflow-y: scroll;
+}
+.header .menu-area .menu-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+.header .menu-area .menu-header .menu-lang{}
+.header .menu-area .menu-header .menu-lang a:first-child{
+    margin-right: 30px;
+}
+.header .menu-area .menu-header .menu-lang a{display: inline-block;}
+.header .menu-area .menu-header .menu-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header .menu-area .menu-header .menu-logo .link-logo{
+    display: block;
+    width: 250px;
+    height: 30px;
+    background: url(../imges/logo/logo.png) no-repeat 0/100%;
+}
+
+.header .menu-area .menu-header .menu-search{}
+.header .menu-area .menu-header .menu-search a:first-child{
+    margin-right: 50px;
+}
+.header .menu-area .menu-header .menu-search a{display: inline-block;}
+
+.header .menu-area .menu-body{
+    margin-top: 25px;
+    width: 100%;
+}
+.header .menu-area .menu-body .menu-list{}
+.header .menu-area .menu-body .menu-item{
+    width: 40%;
+}
+.header .menu-area .menu-body .menu-title{
+    font-size: 2.5em;
+    color: lightgray;
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+    display: block;
+}
+.header .menu-area .menu-body .sub-item{
+    padding-top: 10px;
+}
+.header .menu-area .menu-body .sub-list{}
+.header .menu-area .menu-body .menu-subtitle{
+    font-size: 3.5em;
+    line-height: 1.3em;
+    color: #1f1f1f;
+}
+
+.header .menu-area .menu-footer{}
+.header .menu-area .menu-footer .logo-svg{
+    width: 33px;
+    padding: 0 15px;
+    align-self: center;
+    display: inline-block;
+}
+.header .menu-area .menu-footer .logo-svg svg{width: 100%;}
+.header .menu-area .menu-footer .logo-svg path{fill: #1f1f1f;}
+
+
+
 
 
 
