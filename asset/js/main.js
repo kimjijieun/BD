@@ -164,14 +164,29 @@ $(function(){
     $(window).trigger('scroll');
 
 
-    $('.header .util-area .link-wrap').click(function(e){
+    $('.header .link-wrap').click(function(e){
         e.preventDefault();
         $('.link-wrap').addClass('open');
     })
     $('header').click(function(e){
-        if( !$('.header .util-area .link-wrap').has(e.target).length ) $('.header .util-area .link-wrap').removeClass('open');
+        if( !$('.header .link-wrap').has(e.target).length ) $('.header .link-wrap').removeClass('open');
     });
     // $('.header .util-area .link-wrap').click(function(){
     //     $('.link-wrap').removeClass('open')
     // })
+
+
+    $('.header .util-area .btn-menu').click(function(e){
+        e.preventDefault();
+
+        $('.menu-area').addClass('active');
+        $('body').addClass('active');
+    })
+
+    $('.header .menu-area .menu-close').click(function(e){
+        e.preventDefault();
+
+        $('.menu-area').removeClass('active');
+        $('body').removeClass('active');
+    })
 });
