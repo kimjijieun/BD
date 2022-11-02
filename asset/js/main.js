@@ -38,7 +38,7 @@ $(function(){
         // }
 
         gsap.to('.cursor',{
-            scale:2
+            scale:1.8
         })
     })
     $('a').mouseleave(function(){
@@ -107,11 +107,11 @@ $(function(){
 
 //마지막 슬라이드
       var end = new Swiper(".end-slide", {
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 20,
         navigation: {
-            nextEl: ".next2",
-            prevEl: ".prev2",
+            nextEl: ".next",
+            prevEl: ".prev",
         },
       });
 
@@ -181,6 +181,9 @@ $(function(){
 
         $('.menu-area').addClass('active');
         $('body').addClass('active');
+        // $('.menu-area .menu-item').delay(300).fadeIn(700);
+        // $('.menu-area .menu-item').delay(300).fadeToggle(700);
+        
     })
 
     $('.header .menu-area .menu-close').click(function(e){
@@ -188,5 +191,41 @@ $(function(){
 
         $('.menu-area').removeClass('active');
         $('body').removeClass('active');
+        // $('.menu-area .menu-item').fadeOut();
     })
+
+    // $(".header .menu-area .menu-item").delay(300).animate({opacity: "1"}, 1000);
+    
+    // $('.header .menu-area .opacity1').delay(300).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '0.7s'
+    //     }, 1000);
+    // $('.header .menu-area .opacity2').delay(500).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '1s'
+    //     }, 1000);
+    // $('.header .menu-area .opacity3').delay(700).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '2s'
+    //     }, 1000);
+    // $('.header .menu-area .opacity4').delay(900).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '3s'
+    //     }, 1000);
+    // $('.header .menu-area .opacity5').delay(1100).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '4s'
+    //     }, 1000);
+    // $('.header .menu-area .opacity6').delay(1300).animate({
+    //     opacity: '1',
+    //     transform: 'translateY(0)',
+    //     // transitionDelay: '5s'
+    //     }, 1000);
+
+    
 });
