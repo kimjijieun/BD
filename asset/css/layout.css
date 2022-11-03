@@ -272,8 +272,8 @@
     width: 30%;
 
     transform: translateY(110%);
-    transition: transform 0.7s;
-    transition-delay: 0.7s;
+    /* transition: transform 0.7s; */
+    /* transition-delay: 0.7s; */
     opacity: 0;
 
     /* animation: delay ease-in  1s;
@@ -410,10 +410,10 @@
     transform: translateX(100%);
 } */
 .header .menu-area.active .menu-body .menu-item{
-
+    transition:  transform 1s, opacity 0.7s linear;
     transform: translateY(0);
     opacity: 1;
-    /* transition-delay: 0.7s; */
+    transition-delay: 0.7s;
 
 }
 

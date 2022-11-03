@@ -38,13 +38,15 @@ $(function(){
         // }
 
         gsap.to('.cursor',{
-            scale:1.8
+            scale:1.8,
+            opacity:0.7
         })
     })
     $('a').mouseleave(function(){
         $('.cursor').text('');
         gsap.to('.cursor',{
-            scale:1
+            scale:1,
+            opacity:1
         })
     })
 
