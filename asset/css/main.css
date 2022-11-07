@@ -194,6 +194,12 @@
     color: #fff;
 
 }
+.recom-artist-area .txt-box b{
+    display: inline-block;
+    transform: translateY(110%);
+    transition: transform 1s;
+
+}
 .recom-artist-area .txt-subtitle{
     font-size: 4em;
     margin-bottom: 25px;
@@ -256,6 +262,7 @@
 .sc-contract .contract-box{
     position: relative;
     padding-bottom: 56.25%; /* 16:4 */
+    cursor: pointer;
 }
 .sc-contract .contract-box iframe{
     position: absolute;

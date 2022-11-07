@@ -103,7 +103,7 @@ $(function(){
 
 
       $('.contract-box').click(function(){
-        iframe = `<iframe width="560" height="315" src="https://www.youtube.com/embed/omuSTuF-fxk?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        iframe = `<iframe title="vimeo-player" src="https://player.vimeo.com/video/758722710?h=3069e3a0bf" width="640" height="360" frameborder="0" allowfullscreen></iframe>`
         $(this).html(iframe)
       })
 
@@ -123,7 +123,7 @@ $(function(){
             trigger:".txt-area", //기준태그 recom-artist-area의 시작과 끝
             start:"top 100%", //(트리거기준, 윈도우) 둘이 만나야 실행
             end: "bottom top", //(트리거기준, 윈도우) 둘이 만나야 실행
-            markers:true, //좌표표시
+            // markers:true, //좌표표시
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
