@@ -56,7 +56,7 @@ $(function(){
             trigger:".recom-artist-area", //총구,기준태그 recom-artist-area의 시작과 끝
             start:"top 80%", //(트리거기준, 윈도우기준) 둘이 만나야 실행
             end: "bottom top", //(트리거기준, 윈도우기준) 둘이 만나야 실행
-            markers:true, //좌표표시
+            // markers:true, //좌표표시
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
@@ -159,13 +159,22 @@ $(function(){
         } else {
             $('.header').removeClass('active');
         }
+
+
+        // 글자 올라오기
+        // recomHeight = $('.recom-artist-area').offset().top;
+        recomHeight = $('.recom-artist-area').outerHeight();
+
+        if (curr > recomHeight + 600) {
+            $('.txt-subbox').addClass('active');
+        }
     });
 
 
 
     $(window).trigger('scroll');
 
-
+//서치영역
     $('.header .link-wrap').click(function(e){
         e.preventDefault();
         $('.link-wrap').addClass('open');
@@ -177,7 +186,7 @@ $(function(){
     //     $('.link-wrap').removeClass('open')
     // })
 
-
+// 메뉴버튼
     $('.header .util-area .btn-menu').click(function(e){
         e.preventDefault();
 
@@ -229,5 +238,5 @@ $(function(){
     //     // transitionDelay: '5s'
     //     }, 1000);
 
-    
+
 });

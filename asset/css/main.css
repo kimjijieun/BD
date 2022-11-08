@@ -194,12 +194,17 @@
     color: #fff;
 
 }
-.recom-artist-area .txt-box b{
-    display: inline-block;
-    transform: translateY(110%);
-    transition: transform 1s;
-
+.recom-artist-area .txt-box .txt-subbox {
+    overflow: hidden;
+    display: block;
 }
+.recom-artist-area .txt-box .txt-sub{
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 1s;
+}
+.recom-artist-area .txt-subbox.active .txt-sub{transform: translateY(0%);}
+
 .recom-artist-area .txt-subtitle{
     font-size: 4em;
     margin-bottom: 25px;
