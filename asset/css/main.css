@@ -57,6 +57,7 @@
 .sc-visual .txt-info{
     font-size: 1.8em;
     display: block;
+    overflow: hidden;
 }
 .sc-visual .swiper-slide:hover .txt-info{
     text-decoration: underline;

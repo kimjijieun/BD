@@ -56,7 +56,7 @@ $(function(){
             trigger:".recom-artist-area", //총구,기준태그 recom-artist-area의 시작과 끝
             start:"top 80%", //(트리거기준, 윈도우기준) 둘이 만나야 실행
             end: "bottom top", //(트리거기준, 윈도우기준) 둘이 만나야 실행
-            // markers:true, //좌표표시
+            // markers:true,
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
@@ -195,7 +195,7 @@ $(function(){
         // $('.menu-area .menu-item').delay(300).fadeIn(700);
         // $('.menu-area .menu-item').delay(300).fadeToggle(700);
         
-    })
+    });
 
     $('.header .menu-area .menu-close').click(function(e){
         e.preventDefault();
@@ -203,40 +203,7 @@ $(function(){
         $('.menu-area').removeClass('active');
         $('body').removeClass('active');
         // $('.menu-area .menu-item').fadeOut();
-    })
-
-    // $(".header .menu-area .menu-item").delay(300).animate({opacity: "1"}, 1000);
-    
-    // $('.header .menu-area .opacity1').delay(300).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '0.7s'
-    //     }, 1000);
-    // $('.header .menu-area .opacity2').delay(500).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '1s'
-    //     }, 1000);
-    // $('.header .menu-area .opacity3').delay(700).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '2s'
-    //     }, 1000);
-    // $('.header .menu-area .opacity4').delay(900).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '3s'
-    //     }, 1000);
-    // $('.header .menu-area .opacity5').delay(1100).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '4s'
-    //     }, 1000);
-    // $('.header .menu-area .opacity6').delay(1300).animate({
-    //     opacity: '1',
-    //     transform: 'translateY(0)',
-    //     // transitionDelay: '5s'
-    //     }, 1000);
+    });
 
 
 });
