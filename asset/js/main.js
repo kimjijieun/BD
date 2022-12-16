@@ -127,7 +127,7 @@ $(function(){
             scrub:1, //이ㅔㄱ 있어야 여러번 사용가능, 없으면 1회성
         }, //컴마 필수
 
-        xPercent:-100 //움직이는 애가 -100프로까지 가라
+        xPercent:-50 //움직이는 애가 -100프로까지 가라
       })
 
 
@@ -187,13 +187,23 @@ $(function(){
     // })
 
 // 메뉴버튼
+
+
+    const menu = gsap.from('.menu-area .menu-item',{
+        delay:100,
+        opacity:0,
+        yPercent:20,
+        stagger:0.1,
+        paused:true,
+    })
+
     $('.header .util-area .btn-menu').click(function(e){
         e.preventDefault();
 
+        menu.restart()
+
         $('.menu-area').addClass('active');
         $('body').addClass('active');
-        // $('.menu-area .menu-item').delay(300).fadeIn(700);
-        // $('.menu-area .menu-item').delay(300).fadeToggle(700);
         
     });
 
