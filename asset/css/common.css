@@ -10,7 +10,7 @@ body{
     color: #1f1f1f;
     font-size: 1em;
     line-height: 1.4;
-
+    min-width: 1023px;
 }
 body.active{overflow: hidden;}
 .inner{

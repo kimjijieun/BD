@@ -27,7 +27,16 @@ $(function(){
             val=''
         }
 
-        $(this).data('name')?val=$(this).data('name'):val='';
+        // $(this).data('name')?val=$(this).data('name'):val='';
+
+        // if($(this).data('name')){
+        //     val=$(this).data('name');
+        // }else{
+        //     val='';
+        // }
+
+
+        val = $(this).data('name')?$(this).data('name'):'';
         //줄여쓰기 =>$('.cursor').html(`<span>${val}</span>`);
         
         // if ($(this).parents('.sc-featured').length) {
