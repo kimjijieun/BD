@@ -16,17 +16,6 @@
 .sc-visual .swiper-slide-active img{
     transform: scale(1);
 }
-/* .sc-visual .img-box::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #1f1f1f;
-    opacity: 0.25;
-    z-index: 9;
-} */
 
 .sc-visual .txt-box{
     position: absolute;
@@ -400,101 +389,9 @@
 .support-area img{
     width: 280px;
 }
-/* .support-area span::after{
-    content: '';
-    background: url(../imges/logo/accio-cat.png) no-repeat;
-    width: 280px;
-    height: 100%;
-} */
 
 
 
 
 
 
-@media screen and (max-width: 1200px) {
-    /* *1024을 기준으로 화면을 보고 잡아야함 */ 
-		/*  -> 이것보다 더 줄어들었을때의 과정을 봐야하기때문에*/ 
- 
-}
-
-/* @media screen and (max-width: 1023px) {
-    .sc-featured img{
-        width: 728px;
-        height: 728px;
-        object-fit: cover;
-    }
-    .txt-subtitle{
-        font-size: 3em;
-    }
-    .txt-madeby{
-        font-size: 1.8em;
-    }
-    .sc-title{
-        margin-top: 80px;
-        font-size: 1.8em;
-    }
-    .recom-artist-area .bg-img{
-        width: 768px;
-        height: 518px;
-    }
-    .recom-artist-area{
-        margin-top: 80px;
-    }
-    .sc-authors .name{
-        color: #1f1f1f;
-    }
-    .sc-contract .img-box img{
-        width: 728px;
-        height: 728px;
-        object-fit: cover;
-    }
-    .txt-area{
-        margin-top: 80px;
-    }
-
-    .sc-news img{
-        width: 728px;
-        height: 728px;
-        object-fit: cover;
-    }
-    .sc-news .btn-nav{
-        display: inline-block;
-    }
-    .sc-news .txt-subtitle{
-        font-size: 1.8em;
-        color: #1f1f1f;
-    }
-
-    .footer .sns-area{
-        position: relative;
-        border: 1px solid #1f1f1f;
-        border-width: 0px 0 1px 0;
-    }
-    .footer .note-list{
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-}
-
-@media screen and (max-width: 767px) {
-    
-    .header .inner{
-        width: calc(100% - (10px*2));
-    }
-    .header .search-list{
-        display: none;
-    }
-    .header svg{
-        width: 180px;
-    }
-    .header .util-area .link-menu:last-child{
-        font-size: 1em;
-        border: none;
-        color: #fff;
-        background: none;
-    }
-} */

@@ -2,47 +2,6 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-/* .pop-up{
-    width: 282px;
-    height: 236px;
-    box-sizing: border-box;
-    font-size: .8em;
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    z-index: 999;
-    background-color: white;
-    padding: 15px;
-    border: solid 1px #1f1f1f;
-}
-.pop-up .pop-title{
-    font-size: 2em;
-}
-.pop-up .pop-info{
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin: 25px 0;
-}
-.pop-up .pop-info span{
-    text-decoration: underline;
-}
-.pop-up .button{
-    color: #1f1f1f;
-    background-color: #fff;
-    width: 250px;height: 45px;
-    text-align: center;
-}
-.pop-up .button:hover{
-    color: #fff;
-    background-color: #1f1f1f;
-} */
-
-
-
-
-
-
-
 
 .header{
     width: 100%;
@@ -85,12 +44,7 @@
     display: block;
     fill: #fff;
 }
-/* .header .logo .link-logo{
-    display: block;
-    width: 250px;
-    height: 30px;
-    background: url(../imges/logo/logo.png) no-repeat 0/100%;
-} */
+
 
 /* 자바 */
 .header.active{
@@ -194,13 +148,7 @@
     transform: translateX(0);
     width: 173px;
 }
-/* .header .link-search.open .search-bar{
-    transform: translateX(180px);
-    opacity: 1;
-}
-.header .link-search.open{
-    display: none;
-} */
+
 
 .header .util-area .btn-menu:last-child{
     padding: 5px 10px;
@@ -265,10 +213,6 @@
     transform: translateX(-50%);
 }
 .header .menu-area .menu-header .menu-logo .link-logo{
-    /* display: block;
-    width: 250px;
-    height: 30px;
-    background: url(../imges/logo/logo.png) no-repeat 0/100%; */
     display: block;
     width: 100%;
     height: 100%;
@@ -307,14 +251,6 @@
 .header .menu-area .menu-body .menu-item{
     width: 30%;
 
-    /* transform: translateY(20%);
-    transition:  transform 1.2s, opacity 1.2s; */
-    /* transition: transform 0.7s; */
-    /* transition-delay: 0.7s; */
-    /* opacity: 0; */
-
-    /* animation: delay ease-in  1s;
-    animation-duration: 1s; */
 }
 
 
@@ -342,10 +278,6 @@
     font-size: 1.2em;
     line-height: 1.3em;
 }
-/* .header .menu-area .menu-body .sub-list+.sub-list{
-    font-size: 1.8em;
-    line-height: 1.3em;
-} */
 
 
 
@@ -411,14 +343,8 @@
 .header .menu-area.active{
     transform: translateX(0);
 }
-/* .header .menu-area .menu-header .menu-close.close{
-    transform: translateX(100%);
-} */
 .header .menu-area.active .menu-body .menu-item{
-    /* transition:  transform 1.2s, opacity 1.2s; */
-    /* transform: translateY(0);
-    opacity: 1; */
-    /* transition-delay: 0.7s; */
+
 
 }
 
@@ -519,13 +445,6 @@
     display: flex;
     gap: 25px;
 }
-/* .footer .note-item:nth-child(3)::after{
-    content: '';
-    display: inline-block;
-    background: url(../imges/contents/spSw_hamburger_svg.svg) no-repeat;
-    width: 33px;
-    height: 20px;
-} */
 .footer svg{
     width: 33px
 }
@@ -552,58 +471,6 @@ body::-webkit-scrollbar-track {
 
 
 
-
-/* 반응형 */
-/* @media screen and (max-width: 1200px) {
-
-    .header.active svg{
-        width: 185px;
-    }
-    .header .gnb-area .menu-item{
-        font-size: 1.1em;
-    }
-    .header .menu-list{
-        gap: 25px;
-    }
-    .header .util-area .link-search{
-        margin-right: 25px;
-    }
-    
-    
-    .recom-artist-area .bg-img{
-        height: 690px;
-    }
-    .recom-artist-area .img-box:hover .bg-img{
-        transform: scale(0);
-    }
- 
-}
-
-@media screen and (max-width: 1023px) {
-    .header .inner{
-        justify-content: space-between;
-    }
-    .header .menu-list{
-        display: none;
-    }
-    .header .gnb-area{
-        flex: 0;
-    }
-
-    .sc-title{
-        font-size: 1.8em;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    
-    .sc-visual .txt-title{
-        font-size: 18vw;
-    }
-    .sc-visual .txt-info{
-        font-size: 1.5em;
-    }
-} */
 
 
 
