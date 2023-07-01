@@ -12,7 +12,6 @@
     background-color: transparent;
     box-sizing: border-box;
     z-index: 99;
-    /* font-family: var(--font-en2); */
     font-family: 'akzid';
     font-weight: bold;
     transition: 0.9s cubic-bezier(0, 0, 0.26, 1);
@@ -46,9 +45,7 @@
 }
 
 
-/* 자바 */
 .header.active{
-    /* height: 66px; */
     color: #1f1f1f;
     background-color: white;
     border-bottom: 1px solid black;
@@ -65,16 +62,12 @@
     width: auto;
     height: 100%;
     fill: #1f1f1f;
-    /* background: #0f0; */
 }
 .header.active .gnb-area{
     color: #1f1f1f;
 }
 .header.active .logo-none{
     display: none;
-}
-.header .gnb-area .menu-item{
-    /* font-size: 1.3em; */
 }
 
 
@@ -107,20 +100,14 @@
     cursor: pointer;
 }
 .header .link-search:hover{text-decoration: underline;}
-
-/* .header .search-list{
-    position: relative;
-} */
 .header .link-wrap{
     position: relative;
-    /* overflow: hidden; */
 }
 
 .header .search-bar{
     border: none;
     padding: 5px;
     border-bottom: 2px solid #fff;
-    /* transition: all 0.6s; */
     transition: 0.6s cubic-bezier(0.46, 0.01, 0, 0.99);
     opacity: 0;
     font-size: 1em;
@@ -128,17 +115,15 @@
     background-color: transparent;
     position: absolute;
     right: 50px;
-    /* width: 173px; */
     width: 0;
 
     visibility: hidden;
-    /* transform: translateX(100%); */
 }
 .header .search-bar::placeholder{
     color:  rgb(255, 255, 255, 0.5);
 }
 
-/* 자바 */
+
 .header .link-wrap.open .link-search{
     opacity: 0;
 }
@@ -282,7 +267,6 @@
 
 
 .header .menu-area .menu-body .menu-subtitle{
-    /* font-size: 2.5em; */
     font-size: 1.9em;
     line-height: 1.3em;
     color: #1f1f1f;
@@ -339,14 +323,11 @@
 }
 
 
-/* 제이쿼리 */
+
 .header .menu-area.active{
     transform: translateX(0);
 }
-.header .menu-area.active .menu-body .menu-item{
 
-
-}
 
 
 
@@ -360,8 +341,6 @@
     transition: .6s ease-out;
 
     margin-top: 75px;
-    /* padding-bottom: 25px;
-    padding-top: 25px; */
     padding: 25px 0;
 
     width: 100%;
@@ -452,19 +431,18 @@
 
 
 body::-webkit-scrollbar {
-    width: 7px;  /* 스크롤바의 너비 */
+    width: 7px;
 }
-
 body::-webkit-scrollbar-thumb {
-    height: 10%; /* 스크롤바의 길이 */
-    background: rgba(31, 31, 31, 0.5); /* 스크롤바의 색상 */
+    height: 10%; 
+    background: rgba(31, 31, 31, 0.5);
     
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background: transparent;
-    opacity: 1;  /*스크롤바 뒷 배경 색상*/
+    opacity: 1;
 }
 
 
